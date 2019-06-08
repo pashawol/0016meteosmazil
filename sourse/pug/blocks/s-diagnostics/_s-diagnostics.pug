@@ -1,0 +1,19 @@
+mixin s-diagnostics()
+	// start s-diagnostics
+	+b.SECTION.s-diagnostics.bg-dark.section#s-diagnostics&attributes(attributes)
+		.container
+			h2 Диагностика
+			p Специалист ставит диагноз СРК путем исключения всех возможных органических заболеваний.
+				
+			ul
+				mixin item(i, t)
+					li
+						img(src=`img/s-diagnostics-${i}.png`, alt="")
+						= `${t}`
+				+item("1","Анамнез")
+				+item("2","Осмотр пациента")
+				+item("3","Лабораторные исследования")
+				+item("4","Колоноскопия")
+				+item("5","Другие исследования")
+				+item("6","Диагноз")
+	// end s-diagnostics

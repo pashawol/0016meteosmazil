@@ -1,0 +1,25 @@
+mixin header-block()
+	// start header-block
+	+b.header-block#header-block
+		.container
+			.row
+				.col-sm-auto
+					+e.img-wrap
+						img.res-i(src="img/head-img.png", alt="")
+				.col-lg-6
+					+e.btn.scroll-link(href="#") Где купить?
+				.col.order-sm-first
+					h1 Способствует устранению:
+					.row
+						+e.col
+							img(src="img/head-i-1.png", alt="")
+							| Дискомфорта
+						
+						+e.col
+							img(src="img/head-i-2.png", alt="")
+							| Спазма
+						
+						+e.col
+							img(src="img/head-i-3.png", alt="")
+							| Вздутия 
+	// end header-block

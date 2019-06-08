@@ -1,0 +1,26 @@
+
+//- WP menu
+mixin mnu()
+	- var nav= { "Боль и вздутие в животе":"#s-choice","Синдром CРК":"#s-brain"," О Метеоспазмиле":"#s-approaches"," Частые вопросы ":"#s-faq","Специалистам":"#s-advantages"}
+	ul.menu
+		each linkPatch, linkName in nav
+			li.menu-item: a(href=linkPatch)= linkName
+
+mixin mob-mnu() 
+	+b.menu-mobile--js.d-lg-none
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner 
+			+mnu()
+			.text-right
+	//  мобильное меню	
+
+mixin top-nav() 
+	// start top-nav
+	+b.top-nav.block-with-lazy
+		.container
+			.d-none.d-md-block
+				+mnu()
+			+b.toggle-menu-mobile--js.d-md-none
+				span
+	// end top-nav

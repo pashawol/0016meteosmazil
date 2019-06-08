@@ -1,0 +1,27 @@
+mixin main-banner()
+	// start main-banner
+	+b.main-banner.section#main-banner&attributes(attributes)
+		.container 
+			+e.bg
+			+e.block
+				+e.title МЕТЕОСПАЗМИЛ 
+				.h6 
+					strong.text-warning Алверин  
+					| +  
+					strong.text-primary Симетикон
+				.h5 способствует устранению
+
+				.row
+					+e.col
+						img(src="img/head-i-1.png", alt="")
+						| Дискомфорта
+					
+					+e.col
+						img(src="img/head-i-2.png", alt="")
+						| Спазма
+					
+					+e.col
+						img(src="img/head-i-3.png", alt="")
+						| Вздутия 
+				+e.btn.scroll-link(href="#header") УЗНАТЬ БОЛЬШЕ
+	// end main-banner

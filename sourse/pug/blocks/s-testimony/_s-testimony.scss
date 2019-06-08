@@ -1,0 +1,113 @@
+.s-testimony {
+	background-image: url(../img/s-testimony-bg-main.jpg);
+	position: relative;
+	overflow: hidden;
+	@include bgs;
+	&__inner{
+		padding-top: rem(40); 
+		// margin-left: 0;
+		max-width: 500px;
+		padding-bottom: rem(80);
+		position: relative;
+		&::before{
+			@include media-breakpoint-up(md) {
+
+				content: '';
+				background-image: url(../img/s-testimony-bg.png);
+				width: rem(668);
+				height: 100%;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: left bottom;
+				position: absolute;
+				left: 100%;
+				margin-left: rem(-25);
+				top: 0;
+			}
+			@include media-breakpoint-up(lg) {
+
+				margin-left: rem(45);
+			}
+		}
+	}
+	img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		@extend .res-i;
+		&:nth-child(3){
+			@include media-breakpoint-up(xs) {
+				max-width: 40%;
+			}
+		}
+		&:nth-child(1){
+			
+			margin-bottom: rem(-20);
+		}
+	}
+	h3{
+		text-align: center;
+		color: $warning;
+		font-family: "Myriad Pro"; 
+		font-weight: 700;
+		text-transform: uppercase;
+		padding-top: em(10);
+		margin-bottom: rem(15);
+		@include media-breakpoint-up(lg) {
+		font-size: rem(40);
+	}
+
+			@include rfs(36)
+	}
+
+	li{
+		list-style-type: none;
+		padding-left: rem(50);
+		position: relative;
+		line-height: 1;
+		margin-bottom: 1rem;
+
+		// max-width: rem(490);
+		&::before{
+			content: url(../img/flash.png);
+		 
+			margin-right: 15px;
+			// top: rem(5);
+			position: absolute;
+			left: rem(10);
+			top: 0;
+			
+		}
+		color: #635d60; 
+		font-size: $small;
+	}
+
+
+
+	
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {} 
+
+}

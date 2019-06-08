@@ -1,0 +1,16 @@
+$output-bourbon-deprecation-warnings: false;
+@import "bourbon";
+@import "vars";
+
+// .main-wrapper{
+// 	&::before{
+// 		content: url(../screen/main.jpg);
+// 		opacity:.7; 
+// 		top: 0;
+// 		@include a-cent(x);
+// 		display: block;
+// 		pointer-events: none;
+// 		z-index: 2;
+// 	} 
+// }
+ 

@@ -1,0 +1,75 @@
+.s-choice {
+	padding-top: 0;
+	padding-bottom: 0;
+	@extend .mono;
+	h3,
+	h2{
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 0; 
+		color: $primary;
+		line-height: 1;
+		text-align: left;
+	}
+	h4{
+		
+		font-weight: bold;
+		@extend .mono;
+		text-transform: uppercase;
+		margin-bottom: rem(0);
+	}
+	h2{
+		// @include rfs($h1-font-size);
+		padding-top: rem(35px);
+		@extend .h1;
+	}
+	h3{
+		
+		@extend .h3;
+		margin-bottom: em(14);
+	}
+	img{
+		float: right;
+		@include media-breakpoint-up(md) {
+
+			display: block;
+		}
+		display: none;
+		// margin-left: 5px;
+		// margin-bottom: 30px;
+	}
+	p{
+		font-size: $small;
+		text-align: justify;
+		max-width: rem(634); 
+		font-weight: 400;
+		letter-spacing: 0.23px;
+		line-height: 1.2;
+		color: #635d60;
+	}
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {} 
+
+}

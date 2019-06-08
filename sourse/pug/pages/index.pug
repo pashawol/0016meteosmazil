@@ -1,0 +1,57 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-choice/_s-choice.pug
+include ../blocks/s-brain/_s-brain.pug
+include ../blocks/s-factors/_s-factors.pug
+include ../blocks/s-problems/_s-problems.pug
+include ../blocks/s-symptoms/_s-symptoms.pug
+include ../blocks/s-types/_s-types.pug
+include ../blocks/s-diagnostics/_s-diagnostics.pug
+include ../blocks/s-video/_s-video.pug
+include ../blocks/s-approaches/_s-approaches.pug
+include ../blocks/s-testimony/_s-testimony.pug
+include ../blocks/s-regimen/_s-regimen.pug
+include ../blocks/s-mechanism/_s-mechanism.pug
+include ../blocks/s-faq/_s-faq.pug
+include ../blocks/s-advantages/_s-advantages.pug
+include ../blocks/s-prevalence/_s-prevalence.pug
+include ../blocks/s-schemes/_s-schemes.pug
+include ../blocks/s-mechanismOfAction/_s-mechanismOfAction.pug
+include ../blocks/s-researches/_s-researches.pug
+include ../blocks/main-banner/_main-banner.pug
+
+block title
+	title title
+
+block pagecontent
+	+mob-mnu()
+	+main-banner()
+	+header()
+		+top-line()
+		+top-nav()
+
+	+header-block()
+	+s-choice
+	+s-brain
+	+s-factors
+	+s-problems
+	+s-symptoms
+	+s-types
+	+s-diagnostics
+	+s-video
+	+s-approaches
+	+s-testimony
+	+s-regimen
+	+s-mechanism
+	+s-faq
+	+s-advantages
+	+b.last-wrapper--js.--cut
+		+s-prevalence
+			+s-video
+		+s-schemes
+		+s-mechanismOfAction
+		+s-researches
+	+footer()

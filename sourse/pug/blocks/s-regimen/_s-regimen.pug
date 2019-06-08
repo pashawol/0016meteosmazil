@@ -1,0 +1,34 @@
+mixin s-regimen()
+	// start s-regimen
+	+b.SECTION.s-regimen.section#s-regimen&attributes(attributes)
+		.container
+			h2 схема приема
+			.row
+				.col
+					+e.item.row
+						+e.col.col-auto.d-none.d-md-block
+							img(src="img/s-regimen-man-1.png", alt="")
+						.col
+							.strong.ttu При боли в животе
+							+e.img-wrap
+								img(src="img/s-regimen-i-1.png", alt="")
+								img(src="img/s-regimen-i-2.png", alt="")
+								img(src="img/s-regimen-i-3.png", alt="")
+							p По 1 капсуле до еды 2-3 раза в день
+					
+					+e.item.row
+						+e.col.col-auto.d-none.d-md-block
+							img(src="img/s-regimen-man-2.png", alt="")
+						.col
+							.strong.ttu Для подготовки к исследованиям брюшной полости
+							+e.img-wrap 
+								img(src="img/s-regimen-i-2-1.png", alt="")
+								img(src="img/s-regimen-i-2-2.png", alt="")
+								img(src="img/s-regimen-i-2-3.png", alt="")
+							p При подготовке к&nbsp;исследованиям брюшной полости&nbsp;&mdash; по&nbsp;1&nbsp;капсуле 2-3 раза накануне исследования и&nbsp;1&nbsp;капсуле утром в&nbsp;день ис
+				+e.left-col.col-lg-auto.order-lg-first
+					+e.left-text 
+						+e.small Длительность терапии определяется
+						+e.lg индивидуально
+					//- img(src="img/s-regimen-left-img.png", alt="")
+	// end s-regimen
