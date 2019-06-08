@@ -1,7 +1,6 @@
 var btnToggle = $(".toggle-menu-mobile--js")
 menu = $(".menu-mobile--js")
-JSCCommon = {
-  
+JSCCommon = { 
 	// /magnificPopupCall
 	mobileMenu: function () {
 		// закрыть/открыть мобильное меню
@@ -33,13 +32,8 @@ JSCCommon = {
   
 
 }; 
-jQuery(document).ready(function ($) {
-
-	  
-
-	JSCCommon.mobileMenu();
-  
-
+jQuery(document).ready(function ($) { 
+	JSCCommon.mobileMenu(); 
 function peopleColor() {
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > $(".s-problems").offset().top) {
@@ -181,4 +175,28 @@ peopleColor()
 		}
 		
 	})
+
+	//  modal window
+	$('.popup-with-move-anim').magnificPopup({
+		type: 'inline',
+
+		fixedContentPos: true,
+		fixedBgPos: true,
+
+		overflowY: 'auto',
+
+		closeBtnInside: true,
+		preloader: false,
+
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in',
+		tClose: 'Закрыть (Esc)',
+		closeMarkup: '<div title="%title%" class="mfp-close">\
+		<span class="mfp-close__text">закрыть окно</span>\
+		<span class="mfp-close__icon">&#215;</span>\
+		</div>',
+	});
+
+	// / modal window
 });
