@@ -121,7 +121,7 @@ peopleColor()
 	// modal window
 
  
-	$(".top-nav").stick_in_parent({
+	$(".header").stick_in_parent({
 		parent: 'body',
 		// // recalc_every: 1,
 		//  recalc_every: true,
@@ -197,6 +197,10 @@ peopleColor()
 		<span class="mfp-close__icon">&#215;</span>\
 		</div>',
 	});
+
+	$(".mfp-close").click(function(){
+		$.magnificPopup.close();
+	})
 
 	// / modal window
 });
