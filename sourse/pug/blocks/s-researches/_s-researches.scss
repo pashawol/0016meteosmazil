@@ -124,12 +124,16 @@ font-size: $small;
 		@include media-breakpoint-down(md){
 			@include roww(5)
 		}
+		img{}
 	}
 	.last-row{
 		padding-bottom: rem(40);
 		.col{
 			display: flex;
 			flex-direction: column;
+		}
+		img{
+			margin-bottom: 30px;
 		}
 	}
 	&__bl{
