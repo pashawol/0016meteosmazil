@@ -139,5 +139,28 @@ mixin s-researches()
 								li Частота и&nbsp;консистенция стула
 
 								li Качество жизни по&nbsp;5-балльной системе
-			img(src="img/graf-3.jpg", alt="" class="wow fadeInUp" data-wow-duration=`1s`  data-wow-delay=`1s`)
+			.row.last-row
+				.col-lg-6
+					img(src="img/graf-3.jpg", alt="" class="wow fadeInUp" data-wow-duration=`1s`  data-wow-delay=`1s`)
+				.col
+					+e.bl Эффективность комбинации альверин+симетикон на&nbsp;5-й день была достоверно выше, чем плацебо.
+					.p.row.text-primary
+						+e.col.col-auto
+							img(src="img/s-researches-i-4.png", alt="")
+						.col 
+							strong Результаты  
+							ul
+								li Первичный критерий — Боль
+									br
+									|На 28 день: схожее уменьшение боли 
+									br
+									|На 56 день: эффективность Альверина выше
+									br
+									|(p<0.05) в соответствии с: 
+									.text-body  - суммой баллов по шкале боли
+										br
+										|- интенсивностью боли
+								li Регуляция моторики:
+									.text-body схожее улучшение в обеих группах
+					+e.smallest Barthet et al. Gastroentérologie 1996. 10: 2-7. 
 	// end s-researches
