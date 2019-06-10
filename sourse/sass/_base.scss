@@ -430,9 +430,9 @@ input::-webkit-inner-spin-button {
 
 .last-wrapper{
 	&--cut{
-		// position: relative;
-		// overflow: hidden;
-		// // height: 0;
-		// display: none;
+		position: relative;
+		overflow: hidden;
+		// height: 0;
+		display: none;
 	}
 }
