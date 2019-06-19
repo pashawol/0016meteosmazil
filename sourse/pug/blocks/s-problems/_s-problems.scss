@@ -59,11 +59,15 @@
 		@include mt;
 	}
 	p{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: left;
 		&::before{
 			content: url(../img/warning-i.png);
 			margin-right: rem(5);
 			position: relative;
-			top: rem(10);
+			// top: rem(10);
 		}
 	}
 		 

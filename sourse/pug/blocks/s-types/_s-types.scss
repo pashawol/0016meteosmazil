@@ -1,5 +1,8 @@
 .s-types {
-		 
+		 .small-text{
+			 margin-left: auto;
+			 max-width: 400px;
+		 }
 	@include media-breakpoint-up(lg) {
 
 		padding-top: rem(48);

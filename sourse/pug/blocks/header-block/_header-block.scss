@@ -63,6 +63,29 @@
 			margin-bottom: rem(10);
 			max-width: 100%;
 		}
+		.text{
+			position: relative;
+			&::after{
+				font-size: rem(9);
+				vertical-align: top;
+			}
+		}
+		&:nth-child(1),
+		&:nth-child(3){
+			.text{
+				&::after{ 
+					content: '1';
+				}
+			}
+		}
+		
+		&:nth-child(2){
+			.text{
+				&::after{ 
+					content: '2';
+				}
+			}
+		}
 	}
 	&__btn{
 		@extend .btn;
@@ -111,5 +134,9 @@
 
 	@include media-breakpoint-down(sm) {}
 
-	@include media-breakpoint-down(xs) {}
+	@include media-breakpoint-down(xs) {
+		&__col{
+			font-size: rem(12);
+		}
+	}
 }

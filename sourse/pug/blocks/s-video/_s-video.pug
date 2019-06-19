@@ -1,8 +1,17 @@
+mixin video()
+	video(  controls='controls', poster='video/video.jpg')
+		source(src='video/video.ogv', type='video/ogg')
+		source(src='video/video.mp4', type='video/mp4')
+		source(src='video/video.webm', type='video/webm')
+		|    Тег video не поддерживается вашим браузером. 
+		a(href='../video/action.mp4') Скачайте видео
+
 mixin s-video()
 	// start s-video
 	+b.s-video.section&attributes(attributes)
 		.container
 			+e.video-wrap
-				<iframe   src="https://www.youtube.com/embed/en6gms6e54Q"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				+video
+				//- <iframe   src="https://www.youtube.com/embed/en6gms6e54Q"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 	// end s-video

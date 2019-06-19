@@ -53,6 +53,30 @@
 				}
 				max-width: 100%;
 			}
+			.text{
+				position: relative;
+				&::after{
+					font-size: rem(10);
+					vertical-align: top;
+				}
+			}
+			&:nth-child(1),
+			&:nth-child(3){
+				.text{
+					&::after{ 
+						content: '1';
+					}
+				}
+			}
+			
+			&:nth-child(2){
+				.text{
+					&::after{ 
+						content: '2';
+					}
+				}
+			}
+
 		}
 		&__btn{
 			@extend .btn;
@@ -135,7 +159,7 @@
 				background-size: contain;
 				position: absolute;
 				z-index: -1;
-					background-image: url(../img/girl-2.png);
+					background-image: url(../img/girl-3.gif);
  
 						// background-size: 80%;
 						left: 2%;
@@ -169,7 +193,11 @@
 			color: $primary;
 		}
 	@include media-breakpoint-up(xl) {}
-	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(lg) {
+		.container{
+			max-width: 800px;
+		}
+	}
 	@include media-breakpoint-up(md) {}
 	@include media-breakpoint-up(sm) {}
 	@include media-breakpoint-up(xs) {}

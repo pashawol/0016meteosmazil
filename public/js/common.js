@@ -1,6 +1,8 @@
 var btnToggle = $(".toggle-menu-mobile--js")
 menu = $(".menu-mobile--js")
 JSCCommon = { 
+
+	
 	// /magnificPopupCall
 	mobileMenu: function () {
 		// закрыть/открыть мобильное меню
